@@ -3,7 +3,7 @@
     font-style: normal;
     font-weight: 400;
     font-display: swap;
-    src: url("./assets/statosskyeng-v1.001/Web\ fonts/stratosskyengweb-regular.woff2") format("woff2");
+    src: url("./assets/fonts/stratosskyengweb-regular.woff2") format("woff2");
   }
   
 @font-face {
@@ -11,7 +11,7 @@
     font-style: normal;
     font-weight: 500;
     font-display: swap;
-    src: url("./assets/statosskyeng-v1.001/Web\ fonts/stratosskyengweb-medium.woff2") format("woff2");
+    src: url("./assets/fonts/stratosskyengweb-medium.woff2") format("woff2");
   }
 *{
     padding: 0;
@@ -48,12 +48,22 @@
     padding-left: 136px;
     padding-right: 136px;
 }
-.lvl-box-numbers{
+.lvl-box-numbers{  
     display: flex;
+    height: 98px;
     gap: 26px;
     
 }
-.lvl-number{
+.lvl-box-numbers input[type="radio"]{
+    display: none;
+    
+}
+.lvl-box-numbers input[type="radio"]:checked+label {
+    background-color: white;
+    border: 2px solid #004980;
+}
+.lvl-box-numbers label{
+    box-sizing: border-box;
     background-color: white;
     color:  #0080C1;
     font-family: StratosSkyeng;
@@ -62,13 +72,16 @@
     font-weight: 400;
     line-height: 72px;
     width: 97px;
-    height: 98px;
+    height: 100%;
     border-radius: 12px;
     border-color: white;
     cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
-.lvl-number:hover{
-    box-shadow: 0 0 0 2px #004980;
+.lvl-box-numbers label:hover{
+    box-shadow: 0 0 0 0.5px #004980;
 }
 .start-button{
     width: 246px;
