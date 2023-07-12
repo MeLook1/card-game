@@ -1,0 +1,1 @@
+export const LVL_PAGE = "lvl";
