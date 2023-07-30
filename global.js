@@ -1,6 +1,6 @@
-import { LVL_PAGE, LVL_1_PAGE } from "./pages.js"
+import { LVL_PAGE, GAME_PAGE } from "./pages.js"
 import { renderLevelPageComponent } from "./components/lvl-page-component.js"
-import { renderGamePageComponent } from "./components/1-lvl-page-component.js"
+import { renderGamePageComponent } from "./components/game-page-component.js"
 
 const appEl = document.getElementById("app")
 let page = LVL_PAGE
@@ -32,7 +32,7 @@ startButton.addEventListener("click", () => {
     } else if (lvlSelected === "3") {
         cardsQuantity = 9
     }
-    page = LVL_1_PAGE
+    page = GAME_PAGE
     appEl.innerHTML = ""
     console.log("нажал" + " " + lvlSelected)
     renderGamePage(cardsQuantity)
