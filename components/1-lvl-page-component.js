@@ -1,5 +1,5 @@
 export function renderGamePageComponent({ appEl }) {
-    appEl = document.getElementById("app");
+    appEl = document.getElementById("app")
     const appHtml = `
                     <div class="page-container">
                         <div class="timer">
@@ -14,7 +14,7 @@ export function renderGamePageComponent({ appEl }) {
                         </div>
                         <button class="start-game-button">Начать заново</button>
                     </div>
-                    `;
+                    `
 
-    appEl.innerHTML = appHtml;
+    appEl.innerHTML = appHtml
 }
