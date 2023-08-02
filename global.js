@@ -9,12 +9,12 @@ const renderApp = () => {
         return renderLevelPageComponent({ appEl })
     }
 }
+
 renderApp()
 
 const radios = document.querySelectorAll("input")
 const startButton = document.querySelector(".start-button")
 const pageContainer = document.querySelector(".page-container")
-
 startButton.addEventListener("click", () => {
     let lvlSelected = 0
     for (const radio of radios) {
@@ -22,9 +22,7 @@ startButton.addEventListener("click", () => {
             lvlSelected = radio.value
         }
     }
-
     let cardsQuantity = 0
-
     if (lvlSelected === "1") {
         cardsQuantity = 3
     } else if (lvlSelected === "2") {
@@ -36,6 +34,17 @@ startButton.addEventListener("click", () => {
     appEl.innerHTML = ""
     console.log("нажал" + " " + lvlSelected)
     renderGamePage(cardsQuantity)
+    const hideCards = () => {
+        const gameField = document.querySelector(".game-field")
+        console.log(gameField)
+        const cards = gameField.querySelectorAll("div")
+        console.log(cards)
+        for (let i = 0; i < cards.length; i++) {
+            cards[i].className = ""
+            cards[i].classList.add("back")
+        }
+    }
+    setTimeout(hideCards, 5000)
 })
 
 const renderGamePage = (Quantity) => {

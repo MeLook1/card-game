@@ -1,5 +1,5 @@
 @font-face {
-    font-family: StratosSkyeng;
+    font-family: StratosSkyeng, sans-serif;
     font-style: normal;
     font-weight: 400;
     font-display: swap;
@@ -7,7 +7,7 @@
 }
 
 @font-face {
-    font-family: StratosSkyeng;
+    font-family: StratosSkyeng, sans-serif;
     font-style: normal;
     font-weight: 500;
     font-display: swap;
@@ -26,7 +26,7 @@
     height: 100vh;
     justify-content: center;
     align-items: center;
-    font-family: StratosSkyeng;
+    font-family: StratosSkyeng, sans-serif;
 }
 
 .lvl-box {
@@ -60,16 +60,11 @@
     display: none;
 }
 
-.lvl-box-numbers input[type="radio"]:checked + label {
-    background-color: white;
-    border: 2px solid #004980;
-}
-
 .lvl-box-numbers label {
     box-sizing: border-box;
     background-color: white;
     color: #0080c1;
-    font-family: StratosSkyeng;
+    font-family: StratosSkyeng, sans-serif;
     font-size: 64px;
     font-style: normal;
     font-weight: 400;
@@ -88,6 +83,11 @@
     box-shadow: 0 0 0 0.5px #004980;
 }
 
+.lvl-box-numbers input[type="radio"]:checked + label {
+    background-color: white;
+    border: 2px solid #004980;
+}
+
 .start-button {
     width: 246px;
     height: 50px;
@@ -97,7 +97,7 @@
     border-color: #7ac100;
     margin-bottom: 50px;
     margin-top: 67px;
-    font-family: StratosSkyeng;
+    font-family: StratosSkyeng, sans-serif;
     font-size: 24px;
     font-weight: 400;
     line-height: 32px;
@@ -115,7 +115,7 @@
     display: flex;
     width: 100vw;
     height: 100vh;
-    font-family: StratosSkyeng;
+    font-family: StratosSkyeng, sans-serif;
     flex-direction: column;
     align-items: center;
 }
@@ -131,7 +131,7 @@
     display: flex;
     flex-direction: column;
     color: #fff;
-    font-family: StratosSkyeng;
+    font-family: StratosSkyeng, sans-serif;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -158,7 +158,7 @@
     border-radius: 12px;
     background: var(--salad-60, #7ac100);
     border-color: #7ac100;
-    font-family: StratosSkyeng;
+    font-family: StratosSkyeng, sans-serif;
     font-size: 24px;
     font-style: normal;
     font-weight: 400;
@@ -186,6 +186,294 @@
     width: 95px;
     height: 133px;
     background-size: cover;
-    background-image: url(./assets/img/backCards.jpg);
+    background-image: url("./assets/img/backCards.jpg");
+    border-radius: 4px;
+}
+
+.ace-spades {
+    width: 95px;
+    height: 133px;
+    background-size: cover;
+    background-image: url("./assets/img/ace_spades.jpg");
+    border-radius: 4px;
+}
+
+.ace-hearts {
+    width: 95px;
+    height: 133px;
+    background-size: cover;
+    background-image: url("./assets/img/ace_hearts.jpg");
+    border-radius: 4px;
+}
+
+.ace-diamonds {
+    width: 95px;
+    height: 133px;
+    background-size: cover;
+    background-image: url("./assets/img/ace_diamonds.jpg");
+    border-radius: 4px;
+}
+
+.ace-clubs {
+    width: 95px;
+    height: 133px;
+    background-size: cover;
+    background-image: url("./assets/img/ace_clubs.jpg");
+    border-radius: 4px;
+}
+
+.king-spades {
+    width: 95px;
+    height: 133px;
+    background-size: cover;
+    background-image: url("./assets/img/king_spades.jpg");
+    border-radius: 4px;
+}
+
+.king-hearts {
+    width: 95px;
+    height: 133px;
+    background-size: cover;
+    background-image: url("./assets/img/king_hearts.jpg");
+    border-radius: 4px;
+}
+
+.king-diamonds {
+    width: 95px;
+    height: 133px;
+    background-size: cover;
+    background-image: url("./assets/img/king_diamonds.jpg");
+    border-radius: 4px;
+}
+
+.king-clubs {
+    width: 95px;
+    height: 133px;
+    background-size: cover;
+    background-image: url("./assets/img/king_clubs.jpg");
+    border-radius: 4px;
+}
+
+.queen-spades {
+    width: 95px;
+    height: 133px;
+    background-size: cover;
+    background-image: url("./assets/img/queen_spades.jpg");
+    border-radius: 4px;
+}
+
+.queen-hearts {
+    width: 95px;
+    height: 133px;
+    background-size: cover;
+    background-image: url("./assets/img/queen_hearts.jpg");
+    border-radius: 4px;
+}
+
+.queen-diamonds {
+    width: 95px;
+    height: 133px;
+    background-size: cover;
+    background-image: url("./assets/img/queen_diamonds.jpg");
+    border-radius: 4px;
+}
+
+.queen-clubs {
+    width: 95px;
+    height: 133px;
+    background-size: cover;
+    background-image: url("./assets/img/queen_clubs.jpg");
+    border-radius: 4px;
+}
+
+.jack-spades {
+    width: 95px;
+    height: 133px;
+    background-size: cover;
+    background-image: url("./assets/img/jack_spades.jpg");
+    border-radius: 4px;
+}
+
+.jack-hearts {
+    width: 95px;
+    height: 133px;
+    background-size: cover;
+    background-image: url("./assets/img/jack_hearts.jpg");
+    border-radius: 4px;
+}
+
+.jack-diamonds {
+    width: 95px;
+    height: 133px;
+    background-size: cover;
+    background-image: url("./assets/img/jack_diamonds.jpg");
+    border-radius: 4px;
+}
+
+.jack-clubs {
+    width: 95px;
+    height: 133px;
+    background-size: cover;
+    background-image: url("./assets/img/jack_clubs.jpg");
+    border-radius: 4px;
+}
+
+.ten-spades {
+    width: 95px;
+    height: 133px;
+    background-size: cover;
+    background-image: url("./assets/img/10_spades.jpg");
+    border-radius: 4px;
+}
+
+.ten-hearts {
+    width: 95px;
+    height: 133px;
+    background-size: cover;
+    background-image: url("./assets/img/10_hearts.jpg");
+    border-radius: 4px;
+}
+
+.ten-diamonds {
+    width: 95px;
+    height: 133px;
+    background-size: cover;
+    background-image: url("./assets/img/10_diamonds.jpg");
+    border-radius: 4px;
+}
+
+.ten-clubs {
+    width: 95px;
+    height: 133px;
+    background-size: cover;
+    background-image: url("./assets/img/10_clubs.jpg");
+    border-radius: 4px;
+}
+
+.nine-spades {
+    width: 95px;
+    height: 133px;
+    background-size: cover;
+    background-image: url("./assets/img/9_spades.jpg");
+    border-radius: 4px;
+}
+
+.nine-hearts {
+    width: 95px;
+    height: 133px;
+    background-size: cover;
+    background-image: url("./assets/img/9_hearts.jpg");
+    border-radius: 4px;
+}
+
+.nine-diamonds {
+    width: 95px;
+    height: 133px;
+    background-size: cover;
+    background-image: url("./assets/img/9_diamonds.jpg");
+    border-radius: 4px;
+}
+
+.nine-clubs {
+    width: 95px;
+    height: 133px;
+    background-size: cover;
+    background-image: url("./assets/img/9_clubs.jpg");
+    border-radius: 4px;
+}
+
+.eight-spades {
+    width: 95px;
+    height: 133px;
+    background-size: cover;
+    background-image: url("./assets/img/8_spades.jpg");
+    border-radius: 4px;
+}
+
+.eight-hearts {
+    width: 95px;
+    height: 133px;
+    background-size: cover;
+    background-image: url("./assets/img/8_hearts.jpg");
+    border-radius: 4px;
+}
+
+.eight-diamonds {
+    width: 95px;
+    height: 133px;
+    background-size: cover;
+    background-image: url("./assets/img/8_diamonds.jpg");
+    border-radius: 4px;
+}
+
+.eight-clubs {
+    width: 95px;
+    height: 133px;
+    background-size: cover;
+    background-image: url("./assets/img/8_clubs.jpg");
+    border-radius: 4px;
+}
+
+.seven-spades {
+    width: 95px;
+    height: 133px;
+    background-size: cover;
+    background-image: url("./assets/img/7_spades.jpg");
+    border-radius: 4px;
+}
+
+.seven-hearts {
+    width: 95px;
+    height: 133px;
+    background-size: cover;
+    background-image: url("./assets/img/7_hearts.jpg");
+    border-radius: 4px;
+}
+
+.seven-diamonds {
+    width: 95px;
+    height: 133px;
+    background-size: cover;
+    background-image: url("./assets/img/7_diamonds.jpg");
+    border-radius: 4px;
+}
+
+.seven-clubs {
+    width: 95px;
+    height: 133px;
+    background-size: cover;
+    background-image: url("./assets/img/7_clubs.jpg");
+    border-radius: 4px;
+}
+
+.six-spades {
+    width: 95px;
+    height: 133px;
+    background-size: cover;
+    background-image: url("./assets/img/6_spades.jpg");
+    border-radius: 4px;
+}
+
+.six-hearts {
+    width: 95px;
+    height: 133px;
+    background-size: cover;
+    background-image: url("./assets/img/6_hearts.jpg");
+    border-radius: 4px;
+}
+
+.six-diamonds {
+    width: 95px;
+    height: 133px;
+    background-size: cover;
+    background-image: url("./assets/img/6_diamonds.jpg");
+    border-radius: 4px;
+}
+
+.six-clubs {
+    width: 95px;
+    height: 133px;
+    background-size: cover;
+    background-image: url("./assets/img/6_clubs.jpg");
     border-radius: 4px;
 }

@@ -14,7 +14,7 @@ export function renderLevelPageComponent({ appEl }) {
                     <button class="start-button">Старт</button>
                     </div>
                     </div>
-                    `
+                    `;
 
-    appEl.innerHTML = appHtml
+    appEl.innerHTML = appHtml;
 }
