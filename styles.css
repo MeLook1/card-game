@@ -190,6 +190,15 @@
     border-radius: 4px;
 }
 
+.card {
+    width: 95px;
+    height: 133px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    margin: 0;
+    padding: 0;
+}
+
 .ace-spades {
     width: 95px;
     height: 133px;
@@ -322,7 +331,7 @@
     width: 95px;
     height: 133px;
     background-size: cover;
-    background-image: url("./assets/img/10_spades.jpg");
+    background-image: url("./assets/img/ten_spades.jpg");
     border-radius: 4px;
 }
 
@@ -330,7 +339,7 @@
     width: 95px;
     height: 133px;
     background-size: cover;
-    background-image: url("./assets/img/10_hearts.jpg");
+    background-image: url("./assets/img/ten_hearts.jpg");
     border-radius: 4px;
 }
 
@@ -338,7 +347,7 @@
     width: 95px;
     height: 133px;
     background-size: cover;
-    background-image: url("./assets/img/10_diamonds.jpg");
+    background-image: url("./assets/img/ten_diamonds.jpg");
     border-radius: 4px;
 }
 
@@ -346,7 +355,7 @@
     width: 95px;
     height: 133px;
     background-size: cover;
-    background-image: url("./assets/img/10_clubs.jpg");
+    background-image: url("./assets/img/ten_clubs.jpg");
     border-radius: 4px;
 }
 
@@ -354,7 +363,7 @@
     width: 95px;
     height: 133px;
     background-size: cover;
-    background-image: url("./assets/img/9_spades.jpg");
+    background-image: url("./assets/img/nine_spades.jpg");
     border-radius: 4px;
 }
 
@@ -362,7 +371,7 @@
     width: 95px;
     height: 133px;
     background-size: cover;
-    background-image: url("./assets/img/9_hearts.jpg");
+    background-image: url("./assets/img/nine_hearts.jpg");
     border-radius: 4px;
 }
 
@@ -370,7 +379,7 @@
     width: 95px;
     height: 133px;
     background-size: cover;
-    background-image: url("./assets/img/9_diamonds.jpg");
+    background-image: url("./assets/img/nine_diamonds.jpg");
     border-radius: 4px;
 }
 
@@ -378,7 +387,7 @@
     width: 95px;
     height: 133px;
     background-size: cover;
-    background-image: url("./assets/img/9_clubs.jpg");
+    background-image: url("./assets/img/nine_clubs.jpg");
     border-radius: 4px;
 }
 
@@ -386,7 +395,7 @@
     width: 95px;
     height: 133px;
     background-size: cover;
-    background-image: url("./assets/img/8_spades.jpg");
+    background-image: url("./assets/img/eight_spades.jpg");
     border-radius: 4px;
 }
 
@@ -394,7 +403,7 @@
     width: 95px;
     height: 133px;
     background-size: cover;
-    background-image: url("./assets/img/8_hearts.jpg");
+    background-image: url("./assets/img/eight_hearts.jpg");
     border-radius: 4px;
 }
 
@@ -402,7 +411,7 @@
     width: 95px;
     height: 133px;
     background-size: cover;
-    background-image: url("./assets/img/8_diamonds.jpg");
+    background-image: url("./assets/img/eight_diamonds.jpg");
     border-radius: 4px;
 }
 
@@ -410,7 +419,7 @@
     width: 95px;
     height: 133px;
     background-size: cover;
-    background-image: url("./assets/img/8_clubs.jpg");
+    background-image: url("./assets/img/eight_clubs.jpg");
     border-radius: 4px;
 }
 
@@ -418,7 +427,7 @@
     width: 95px;
     height: 133px;
     background-size: cover;
-    background-image: url("./assets/img/7_spades.jpg");
+    background-image: url("./assets/img/seven_spades.jpg");
     border-radius: 4px;
 }
 
@@ -426,7 +435,7 @@
     width: 95px;
     height: 133px;
     background-size: cover;
-    background-image: url("./assets/img/7_hearts.jpg");
+    background-image: url("./assets/img/seven_hearts.jpg");
     border-radius: 4px;
 }
 
@@ -434,7 +443,7 @@
     width: 95px;
     height: 133px;
     background-size: cover;
-    background-image: url("./assets/img/7_diamonds.jpg");
+    background-image: url("./assets/img/seven_diamonds.jpg");
     border-radius: 4px;
 }
 
@@ -442,7 +451,7 @@
     width: 95px;
     height: 133px;
     background-size: cover;
-    background-image: url("./assets/img/7_clubs.jpg");
+    background-image: url("./assets/img/seven_clubs.jpg");
     border-radius: 4px;
 }
 
@@ -450,7 +459,7 @@
     width: 95px;
     height: 133px;
     background-size: cover;
-    background-image: url("./assets/img/6_spades.jpg");
+    background-image: url("./assets/img/six_spades.jpg");
     border-radius: 4px;
 }
 
@@ -458,7 +467,7 @@
     width: 95px;
     height: 133px;
     background-size: cover;
-    background-image: url("./assets/img/6_hearts.jpg");
+    background-image: url("./assets/img/six_hearts.jpg");
     border-radius: 4px;
 }
 
@@ -466,7 +475,7 @@
     width: 95px;
     height: 133px;
     background-size: cover;
-    background-image: url("./assets/img/6_diamonds.jpg");
+    background-image: url("./assets/img/six_diamonds.jpg");
     border-radius: 4px;
 }
 
@@ -474,6 +483,6 @@
     width: 95px;
     height: 133px;
     background-size: cover;
-    background-image: url("./assets/img/6_clubs.jpg");
+    background-image: url("./assets/img/six_clubs.jpg");
     border-radius: 4px;
 }

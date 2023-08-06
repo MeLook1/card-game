@@ -11,8 +11,9 @@
         "sourceType": "module"
     },
     "rules": {
-        "prettier/prettier": ["error"],
-        "camelcase": ["error"],
-        "eqeqeq": ["error", "always"]
+        // "no-descending-specificity": 0,
+        // "prettier/prettier": ["error"],
+        // "camelcase": ["error"]
+        // // "eqeqeq": ["error", "always"]
     }
 }

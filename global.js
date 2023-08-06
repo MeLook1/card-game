@@ -1,6 +1,7 @@
 import { LVL_PAGE, GAME_PAGE } from "./pages.js"
 import { renderLevelPageComponent } from "./components/lvl-page-component.js"
 import { renderGamePageComponent } from "./components/game-page-component.js"
+import { compareCards } from "./compareCards.js"
 
 const appEl = document.getElementById("app")
 let page = LVL_PAGE
@@ -11,6 +12,19 @@ const renderApp = () => {
 }
 
 renderApp()
+
+const suits = ["clubs", "diamonds", "hearts", "spades"]
+const ranks = [
+    "ace",
+    "king",
+    "queen",
+    "jack",
+    "ten",
+    "nine",
+    "eight",
+    "seven",
+    "six",
+]
 
 const radios = document.querySelectorAll("input")
 const startButton = document.querySelector(".start-button")
@@ -34,17 +48,59 @@ startButton.addEventListener("click", () => {
     appEl.innerHTML = ""
     console.log("нажал" + " " + lvlSelected)
     renderGamePage(cardsQuantity)
-    const hideCards = () => {
-        const gameField = document.querySelector(".game-field")
-        console.log(gameField)
-        const cards = gameField.querySelectorAll("div")
-        console.log(cards)
-        for (let i = 0; i < cards.length; i++) {
-            cards[i].className = ""
-            cards[i].classList.add("back")
+    let cardsSet = []
+
+    // заполняем массив парами карт
+    for (let i = 0; i < cardsQuantity; i++) {
+        const randomSuit = Math.floor(Math.random() * 4)
+        const randomRank = Math.floor(Math.random() * 9)
+
+        const firstEl =
+            "../assets/img/" +
+            ranks[randomRank] +
+            "_" +
+            suits[randomSuit] +
+            ".jpg"
+        const secondEl =
+            "../assets/img/" +
+            ranks[randomRank] +
+            "_" +
+            suits[randomSuit] +
+            ".jpg"
+        cardsSet.push(firstEl, secondEl)
+    }
+
+    shuffle(cardsSet)
+    shuffle(cardsSet)
+    shuffle(cardsSet)
+    shuffle(cardsSet)
+    shuffle(cardsSet)
+
+    // перемешиваем массив
+    function shuffle(arr) {
+        for (let i = arr.length - 1; i > 0; i--) {
+            let j = Math.floor(Math.random() * (i + 1))
+            ;[arr[i], arr[j]] = [arr[j], arr[i]]
         }
     }
+    const gameField = document.querySelector(".game-field")
+    for (let i = 0; i < cardsSet.length; i++) {
+        const elem = document.createElement("img")
+        elem.src = cardsSet[i]
+        elem.classList.add("card")
+        gameField.appendChild(elem)
+    }
+    const cards = gameField.querySelectorAll(".card")
+    // скрываем карты через 5сек
+    function hideCards() {
+        cards.forEach((card) => {
+            card.src = "../assets/img/backCards.jpg"
+        })
+    }
+
     setTimeout(hideCards, 5000)
+
+    compareCards(cards, cardsSet)
 })
 
 const renderGamePage = (Quantity) => {
