@@ -1,22 +1,24 @@
 @font-face {
-    font-family: "StratosSkyeng";
+    font-family: StratosSkyeng, sans-serif;
     font-style: normal;
     font-weight: 400;
     font-display: swap;
     src: url("./assets/fonts/stratosskyengweb-regular.woff2") format("woff2");
-  }
-  
+}
+
 @font-face {
-    font-family: "StratosSkyeng";
+    font-family: StratosSkyeng, sans-serif;
     font-style: normal;
     font-weight: 500;
     font-display: swap;
     src: url("./assets/fonts/stratosskyengweb-medium.woff2") format("woff2");
-  }
-*{
+}
+
+* {
     padding: 0;
     margin: 0;
 }
+
 .page-container {
     background-color: #004980;
     display: flex;
@@ -24,49 +26,45 @@
     height: 100vh;
     justify-content: center;
     align-items: center;
-    font-family: StratosSkyeng;
-  }
-.lvl-box{
+    font-family: StratosSkyeng, sans-serif;
+}
+
+.lvl-box {
     display: flex;
     border-radius: 12px;
-    background: #C2F5FF;
+    background: #c2f5ff;
     width: 480px;
     height: 459px;
     flex-shrink: 0;
     color: #004980;
     text-align: center;
     flex-direction: column;
-    align-items: center; 
+    align-items: center;
 }
-.lvl-box-title{
+
+.lvl-box-title {
     font-size: 40px;
     font-style: normal;
     font-weight: 400;
     line-height: 48px;
-    padding-top: 50px;
-    padding-bottom: 48px;
-    padding-left: 136px;
-    padding-right: 136px;
+    padding: 50px 136px 48px;
 }
-.lvl-box-numbers{  
+
+.lvl-box-numbers {
     display: flex;
     height: 98px;
     gap: 26px;
-    
 }
-.lvl-box-numbers input[type="radio"]{
+
+.lvl-box-numbers input[type="radio"] {
     display: none;
-    
 }
-.lvl-box-numbers input[type="radio"]:checked+label {
-    background-color: white;
-    border: 2px solid #004980;
-}
-.lvl-box-numbers label{
+
+.lvl-box-numbers label {
     box-sizing: border-box;
     background-color: white;
-    color:  #0080C1;
-    font-family: StratosSkyeng;
+    color: #0080c1;
+    font-family: StratosSkyeng, sans-serif;
     font-size: 64px;
     font-style: normal;
     font-weight: 400;
@@ -80,27 +78,411 @@
     flex-direction: column;
     justify-content: center;
 }
-.lvl-box-numbers label:hover{
+
+.lvl-box-numbers label:hover {
     box-shadow: 0 0 0 0.5px #004980;
 }
-.start-button{
+
+.lvl-box-numbers input[type="radio"]:checked + label {
+    background-color: white;
+    border: 2px solid #004980;
+}
+
+.start-button {
     width: 246px;
     height: 50px;
     color: white;
-    background: #7AC100;
+    background: #7ac100;
     border-radius: 12px;
-    border-color: #7AC100;
+    border-color: #7ac100;
     margin-bottom: 50px;
     margin-top: 67px;
-    font-family: StratosSkyeng;
+    font-family: StratosSkyeng, sans-serif;
     font-size: 24px;
     font-weight: 400;
     line-height: 32px;
-    letter-spacing: 0em;
+    letter-spacing: 0;
     text-align: center;
     cursor: pointer;
-
 }
-.start-button:hover{
+
+.start-button:hover {
     box-shadow: 0 0 0 2px #5bbd68;
+}
+
+.game-page-container {
+    background-color: #004980;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    font-family: StratosSkyeng, sans-serif;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header {
+    display: flex;
+    width: 100vw;
+    height: 113px;
+    justify-content: space-between;
+}
+
+.timer {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    font-family: StratosSkyeng, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    margin-left: 22px;
+}
+
+.time-measure {
+    display: flex;
+    justify-content: flex-end;
+    gap: 57px;
+    margin-top: 22px;
+}
+
+.time {
+    font-size: 64px;
+    line-height: 72px;
+}
+
+.start-game-button {
+    width: 246px;
+    height: 48px;
+    color: white;
+    border-radius: 12px;
+    background: var(--salad-60, #7ac100);
+    border-color: #7ac100;
+    font-family: StratosSkyeng, sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    margin-top: 52px;
+    margin-right: 23px;
+    text-align: center;
+}
+
+.start-game-button:hover {
+    box-shadow: 0 0 0 2px #5bbd68;
+}
+
+.game-field {
+    width: 975px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 35px;
+    align-items: center;
+    justify-content: center;
+}
+
+.back {
+    width: 95px;
+    height: 133px;
+    background-size: cover;
+    background-image: url("./assets/img/backCards.jpg");
+    border-radius: 4px;
+}
+
+.card {
+    width: 95px;
+    height: 133px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    margin: 0;
+    padding: 0;
+}
+
+.ace-spades {
+    width: 95px;
+    height: 133px;
+    background-size: cover;
+    background-image: url("./assets/img/ace_spades.jpg");
+    border-radius: 4px;
+}
+
+.ace-hearts {
+    width: 95px;
+    height: 133px;
+    background-size: cover;
+    background-image: url("./assets/img/ace_hearts.jpg");
+    border-radius: 4px;
+}
+
+.ace-diamonds {
+    width: 95px;
+    height: 133px;
+    background-size: cover;
+    background-image: url("./assets/img/ace_diamonds.jpg");
+    border-radius: 4px;
+}
+
+.ace-clubs {
+    width: 95px;
+    height: 133px;
+    background-size: cover;
+    background-image: url("./assets/img/ace_clubs.jpg");
+    border-radius: 4px;
+}
+
+.king-spades {
+    width: 95px;
+    height: 133px;
+    background-size: cover;
+    background-image: url("./assets/img/king_spades.jpg");
+    border-radius: 4px;
+}
+
+.king-hearts {
+    width: 95px;
+    height: 133px;
+    background-size: cover;
+    background-image: url("./assets/img/king_hearts.jpg");
+    border-radius: 4px;
+}
+
+.king-diamonds {
+    width: 95px;
+    height: 133px;
+    background-size: cover;
+    background-image: url("./assets/img/king_diamonds.jpg");
+    border-radius: 4px;
+}
+
+.king-clubs {
+    width: 95px;
+    height: 133px;
+    background-size: cover;
+    background-image: url("./assets/img/king_clubs.jpg");
+    border-radius: 4px;
+}
+
+.queen-spades {
+    width: 95px;
+    height: 133px;
+    background-size: cover;
+    background-image: url("./assets/img/queen_spades.jpg");
+    border-radius: 4px;
+}
+
+.queen-hearts {
+    width: 95px;
+    height: 133px;
+    background-size: cover;
+    background-image: url("./assets/img/queen_hearts.jpg");
+    border-radius: 4px;
+}
+
+.queen-diamonds {
+    width: 95px;
+    height: 133px;
+    background-size: cover;
+    background-image: url("./assets/img/queen_diamonds.jpg");
+    border-radius: 4px;
+}
+
+.queen-clubs {
+    width: 95px;
+    height: 133px;
+    background-size: cover;
+    background-image: url("./assets/img/queen_clubs.jpg");
+    border-radius: 4px;
+}
+
+.jack-spades {
+    width: 95px;
+    height: 133px;
+    background-size: cover;
+    background-image: url("./assets/img/jack_spades.jpg");
+    border-radius: 4px;
+}
+
+.jack-hearts {
+    width: 95px;
+    height: 133px;
+    background-size: cover;
+    background-image: url("./assets/img/jack_hearts.jpg");
+    border-radius: 4px;
+}
+
+.jack-diamonds {
+    width: 95px;
+    height: 133px;
+    background-size: cover;
+    background-image: url("./assets/img/jack_diamonds.jpg");
+    border-radius: 4px;
+}
+
+.jack-clubs {
+    width: 95px;
+    height: 133px;
+    background-size: cover;
+    background-image: url("./assets/img/jack_clubs.jpg");
+    border-radius: 4px;
+}
+
+.ten-spades {
+    width: 95px;
+    height: 133px;
+    background-size: cover;
+    background-image: url("./assets/img/ten_spades.jpg");
+    border-radius: 4px;
+}
+
+.ten-hearts {
+    width: 95px;
+    height: 133px;
+    background-size: cover;
+    background-image: url("./assets/img/ten_hearts.jpg");
+    border-radius: 4px;
+}
+
+.ten-diamonds {
+    width: 95px;
+    height: 133px;
+    background-size: cover;
+    background-image: url("./assets/img/ten_diamonds.jpg");
+    border-radius: 4px;
+}
+
+.ten-clubs {
+    width: 95px;
+    height: 133px;
+    background-size: cover;
+    background-image: url("./assets/img/ten_clubs.jpg");
+    border-radius: 4px;
+}
+
+.nine-spades {
+    width: 95px;
+    height: 133px;
+    background-size: cover;
+    background-image: url("./assets/img/nine_spades.jpg");
+    border-radius: 4px;
+}
+
+.nine-hearts {
+    width: 95px;
+    height: 133px;
+    background-size: cover;
+    background-image: url("./assets/img/nine_hearts.jpg");
+    border-radius: 4px;
+}
+
+.nine-diamonds {
+    width: 95px;
+    height: 133px;
+    background-size: cover;
+    background-image: url("./assets/img/nine_diamonds.jpg");
+    border-radius: 4px;
+}
+
+.nine-clubs {
+    width: 95px;
+    height: 133px;
+    background-size: cover;
+    background-image: url("./assets/img/nine_clubs.jpg");
+    border-radius: 4px;
+}
+
+.eight-spades {
+    width: 95px;
+    height: 133px;
+    background-size: cover;
+    background-image: url("./assets/img/eight_spades.jpg");
+    border-radius: 4px;
+}
+
+.eight-hearts {
+    width: 95px;
+    height: 133px;
+    background-size: cover;
+    background-image: url("./assets/img/eight_hearts.jpg");
+    border-radius: 4px;
+}
+
+.eight-diamonds {
+    width: 95px;
+    height: 133px;
+    background-size: cover;
+    background-image: url("./assets/img/eight_diamonds.jpg");
+    border-radius: 4px;
+}
+
+.eight-clubs {
+    width: 95px;
+    height: 133px;
+    background-size: cover;
+    background-image: url("./assets/img/eight_clubs.jpg");
+    border-radius: 4px;
+}
+
+.seven-spades {
+    width: 95px;
+    height: 133px;
+    background-size: cover;
+    background-image: url("./assets/img/seven_spades.jpg");
+    border-radius: 4px;
+}
+
+.seven-hearts {
+    width: 95px;
+    height: 133px;
+    background-size: cover;
+    background-image: url("./assets/img/seven_hearts.jpg");
+    border-radius: 4px;
+}
+
+.seven-diamonds {
+    width: 95px;
+    height: 133px;
+    background-size: cover;
+    background-image: url("./assets/img/seven_diamonds.jpg");
+    border-radius: 4px;
+}
+
+.seven-clubs {
+    width: 95px;
+    height: 133px;
+    background-size: cover;
+    background-image: url("./assets/img/seven_clubs.jpg");
+    border-radius: 4px;
+}
+
+.six-spades {
+    width: 95px;
+    height: 133px;
+    background-size: cover;
+    background-image: url("./assets/img/six_spades.jpg");
+    border-radius: 4px;
+}
+
+.six-hearts {
+    width: 95px;
+    height: 133px;
+    background-size: cover;
+    background-image: url("./assets/img/six_hearts.jpg");
+    border-radius: 4px;
+}
+
+.six-diamonds {
+    width: 95px;
+    height: 133px;
+    background-size: cover;
+    background-image: url("./assets/img/six_diamonds.jpg");
+    border-radius: 4px;
+}
+
+.six-clubs {
+    width: 95px;
+    height: 133px;
+    background-size: cover;
+    background-image: url("./assets/img/six_clubs.jpg");
+    border-radius: 4px;
 }
