@@ -2,6 +2,7 @@ import { LVL_PAGE, GAME_PAGE } from "./pages.js"
 import { renderLevelPageComponent } from "./components/lvl-page-component.js"
 import { renderGamePageComponent } from "./components/game-page-component.js"
 import { compareCards } from "./compareCards.js"
+import './assets/'
 
 const appEl = document.getElementById("app")
 let page = LVL_PAGE
