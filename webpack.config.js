@@ -21,18 +21,18 @@ module.exports = {
             { test: /\.css$/, use: [MiniCssExtractPlugin.loader, "css-loader"] },
             {
                 test: /\.(png|svg|jpg|jpeg|gif)$/i,
-                type: "assets/img",
+                type: "static/img",
             },
             {
                 test: /\.(woff|woff2|eot|ttf|otf)$/i,
-                type: "assets/fonts",
+                type: "static/fonts",
             },
         ],
     },
 
     plugins: [
         new CopyPlugin({
-            patterns: [{ from: "assets", to: "assets" }],
+            patterns: [{ from: "static", to: "static" }],
         }),
         new HtmlWebpackPlugin({
             template: "./index.html",

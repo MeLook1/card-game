@@ -2,7 +2,6 @@ import { LVL_PAGE, GAME_PAGE } from "./pages.js"
 import { renderLevelPageComponent } from "./components/lvl-page-component.js"
 import { renderGamePageComponent } from "./components/game-page-component.js"
 import { compareCards } from "./compareCards.js"
-import './assets/'
 
 const appEl = document.getElementById("app")
 let page = LVL_PAGE
@@ -57,13 +56,13 @@ startButton.addEventListener("click", () => {
         const randomRank = Math.floor(Math.random() * 9)
 
         const firstEl =
-            "../assets/img/" +
+            "../static/img/" +
             ranks[randomRank] +
             "_" +
             suits[randomSuit] +
             ".jpg"
         const secondEl =
-            "../assets/img/" +
+            "../static/img/" +
             ranks[randomRank] +
             "_" +
             suits[randomSuit] +
@@ -95,7 +94,7 @@ startButton.addEventListener("click", () => {
     // скрываем карты через 5сек
     function hideCards() {
         cards.forEach((card) => {
-            card.src = "../assets/img/backCards.jpg"
+            card.src = "../static/img/backCards.jpg"
         })
     }
 
